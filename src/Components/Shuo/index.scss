@@ -1,0 +1,17 @@
+$ui-width: 320px;
+@function px2rem($px) {
+    @return $px/$ui-width*3.2rem;
+}
+*{
+	margin:0px;
+	padding:0px;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+}
+
+li{
+	list-style:none;
+}
