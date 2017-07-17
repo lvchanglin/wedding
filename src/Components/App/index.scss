@@ -1,3 +1,26 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 $ui-width: 320px;
 @function px2rem($px) {
     @return $px/$ui-width*3.2rem;
@@ -21,9 +44,11 @@ li{
 
 
 #header{
+	position:fixed;
 	float:left;
 	width:px2rem(640px);
 	height:px2rem(90px);
+	background:red;
 	font-size:16px;
 }
 
