@@ -9,6 +9,7 @@ import Option from "./Components/Option/index";
 import Zhuye from "./Components/Zhuye/index";
 import shuo from "./Components/shuo/index";
 import Login from "./Components/Login/index";
+import geren from "./Components/geren/index";
 
 
 import {
@@ -39,13 +40,14 @@ const router = (
 			<Route path="/shuo" component={shuo}/>
 
 			<Route path="/encyclopedias" component={Encyclopedias}/>
-			<Route path="login" component={Login}/>
+			<Route path="/login" component={Login}/>
 			
 			
 		<Redirect from="/" to="/zhuye" />
 		</Switch>			
 
 	</App>
+	<Route path="/geren" component={geren}/>
 	</Router>
 	)
 export default router;

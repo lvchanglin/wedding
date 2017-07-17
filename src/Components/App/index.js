@@ -24,6 +24,7 @@ class App extends Component{
 						<i className="iconfont icon-cart"></i>
 					</span>
 					<span>
+						
 						<i className="iconfont icon-account"></i>
 					</span>
 				</div>
