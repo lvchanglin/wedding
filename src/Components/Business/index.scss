@@ -1,37 +1,65 @@
-$ui-width: 320px;
-@function px2rem($px) {
-    @return $px/$ui-width*3.2rem;
-}
-*{
-	margin:0px;
-	padding:0px;
-}
 
-html,body{
-	width:100%;
-	height:100%;
-}
 
-li{
-	list-style:none;
-}
 
-.bgcolor{
-	color:#FF705E;
-	
-}
-#buse{
-	float:left;
-	
-	height:px2rem(90px);
-	li{
-		line-height:px2rem(90px);
-		border-bottom:5px solid #FF705E;
-		float:left;
-		width:px2rem(150px);
-		font-size:16px;
-		margin-left: px2rem(10px);
-    text-align: center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+import React,{Component} from "react";
+import "./index.scss";
+import "../../assets/iconfont/iconfont.css";
+import {
+	NavLink
+} from "react-router-dom";
+
+
+
+class Business extends Component{
+	constructor(props) {
+		super(props);
+		
 	}
 
+
+	render() {
+		return (
+			<div>
+				<div id="buse">
+						<a href="#"><i className="iconfont icon-back"></i></a>
+						<ul >
+							<li>
+							<NavLink to="/business/business_One" activeClassName="bgcolor"><a>ÉÌ¼Ò</a></NavLink>
+							</li>
+							<li>
+							<NavLink to="/business/business_Package" activeClassName="bgcolor"><a>Ì×²Í</a></NavLink>
+							</li>
+							<li>
+							<NavLink to="/business/business_Case" activeClassName="bgcolor"><a>°¸Àý</a></NavLink>
+							</li>
+						</ul>
+						<a href="#"><img src="src/img/house.png"/></a>
+					</div>
+				<section>
+					{
+						this.props.children
+					}
+				</section>
+				
+				</div>	
+
+		)
+	}
 }
+
+export default Business;
