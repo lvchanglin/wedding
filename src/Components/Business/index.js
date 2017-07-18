@@ -1,24 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React,{Component} from "react";
 import "./index.scss";
 import "../../assets/iconfont/iconfont.css";
+import img1 from "./img/house.png";
 import {
 	NavLink
 } from "react-router-dom";
@@ -36,7 +19,7 @@ class Business extends Component{
 		return (
 			<div>
 				<div id="buse">
-						<a href="#"><i className="iconfont icon-back"></i></a>
+						<a href="#" className="a1"><i className="iconfont icon-back"></i></a>
 						<ul >
 							<li>
 							<NavLink to="/business/business_One" activeClassName="bgcolor"><a>商家</a></NavLink>
@@ -48,7 +31,7 @@ class Business extends Component{
 							<NavLink to="/business/business_Case" activeClassName="bgcolor"><a>案例</a></NavLink>
 							</li>
 						</ul>
-						<a href="#"><img src="src/img/house.png"/></a>
+						<a href="#" className="a2"><img src={img1}/></a>
 					</div>
 				<section>
 					{

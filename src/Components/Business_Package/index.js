@@ -1,26 +1,7 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import React,{Component} from "react";
+Ôªøimport React,{Component} from "react";
 import "./index.scss";
 import "../../assets/iconfont/iconfont.css";
+import img1 from "./img/img1.jpg";
 import {
 	NavLink
 } from "react-router-dom";
@@ -44,133 +25,96 @@ class Business_Case extends Component{
 					}
 				</section>	
 
-				<div id="daohang">
-					<ul>
-						<li>ªÈ¿Ò≤ﬂªÆ<i className="iconfont more_unfold">&#xe6a6;</i></li>
-						<li>ƒ¨»œ≈≈–Ú<i className="iconfont more_unfold">&#xe6a6;</i></li>
-					</ul>
-				</div>
-
 				<div className="line"></div>
 
-				<div id="cont">
+				<div id="nav">
 					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigÿ≠∑® Ω∏£¬•ÿ≠»’ Ω”£ª®÷˜Ã‚</h3>
-								<p className="p1">IRIS∂¿¡¢ªÈ¿Ò≤ﬂªÆÕ≈∂”</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
-							</div>
-						</li>
+						<li>Â©öÁ§ºÁ≠ñÂàí<i className="iconfont i1">&#xe6a6;</i></li>
+						<li>ÈªòËÆ§ÊéíÂ∫è<i className="iconfont i3">&#xe6a6;</i></li>
 					</ul>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigÿ≠∑® Ω∏£¬•ÿ≠»’ Ω”£ª®÷˜Ã‚</h3>
-								<p className="p1">IRIS∂¿¡¢ªÈ¿Ò≤ﬂªÆÕ≈∂”</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
-							</div>
-						</li>
-					</ul>
+				<div id="con">
+					<img src={img1}/>
+					<div className="text">
+						<h3>ÊñëÈ©¨Â©öÁ§ºËÆ∞„ÄäÁºò„Äã</h3>
+						
+						<div className="price">
+							<p className="p1">ÊñëÈ©¨Â©öÁ§ºËÆ∞</p>
+							<p className="p2">
+								<span className="sale">Ôø•23888.00</span>
+								<span className="real">Ôø•32000.00</span>
+							</p>
+							
+						</div>
+					</div>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigÿ≠∑® Ω∏£¬•ÿ≠»’ Ω”£ª®÷˜Ã‚</h3>
-								<p className="p1">IRIS∂¿¡¢ªÈ¿Ò≤ﬂªÆÕ≈∂”</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
-							</div>
-						</li>
-					</ul>
+				<div id="con">
+					<img src={img1}/>
+					<div className="text">
+						<h3>ÊñëÈ©¨Â©öÁ§ºËÆ∞„ÄäÁºò„Äã</h3>
+						
+						<div className="price">
+							<p className="p1">ÊñëÈ©¨Â©öÁ§ºËÆ∞</p>
+							<p className="p2">
+								<span className="sale">Ôø•23888.00</span>
+								<span className="real">Ôø•32000.00</span>
+							</p>
+							
+						</div>
+					</div>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigÿ≠∑® Ω∏£¬•ÿ≠»’ Ω”£ª®÷˜Ã‚</h3>
-								<p className="p1">IRIS∂¿¡¢ªÈ¿Ò≤ﬂªÆÕ≈∂”</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
-							</div>
-						</li>
-					</ul>
+				<div id="con">
+					<img src={img1}/>
+					<div className="text">
+						<h3>ÊñëÈ©¨Â©öÁ§ºËÆ∞„ÄäÁºò„Äã</h3>
+						
+						<div className="price">
+							<p className="p1">ÊñëÈ©¨Â©öÁ§ºËÆ∞</p>
+							<p className="p2">
+								<span className="sale">Ôø•23888.00</span>
+								<span className="real">Ôø•32000.00</span>
+							</p>
+							
+						</div>
+					</div>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigÿ≠∑® Ω∏£¬•ÿ≠»’ Ω”£ª®÷˜Ã‚</h3>
-								<p className="p1">IRIS∂¿¡¢ªÈ¿Ò≤ﬂªÆÕ≈∂”</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
-							</div>
-						</li>
-					</ul>
+				<div id="con">
+					<img src={img1}/>
+					<div className="text">
+						<h3>ÊñëÈ©¨Â©öÁ§ºËÆ∞„ÄäÁºò„Äã</h3>
+						
+						<div className="price">
+							<p className="p1">ÊñëÈ©¨Â©öÁ§ºËÆ∞</p>
+							<p className="p2">
+								<span className="sale">Ôø•23888.00</span>
+								<span className="real">Ôø•32000.00</span>
+							</p>
+							
+						</div>
+					</div>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigÿ≠∑® Ω∏£¬•ÿ≠»’ Ω”£ª®÷˜Ã‚</h3>
-								<p className="p1">IRIS∂¿¡¢ªÈ¿Ò≤ﬂªÆÕ≈∂”</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
-							</div>
-						</li>
-					</ul>
+				<div id="con">
+					<img src={img1}/>
+					<div className="text">
+						<h3>ÊñëÈ©¨Â©öÁ§ºËÆ∞„ÄäÁºò„Äã</h3>
+						
+						<div className="price">
+							<p className="p1">ÊñëÈ©¨Â©öÁ§ºËÆ∞</p>
+							<p className="p2">
+								<span className="sale">Ôø•23888.00</span>
+								<span className="real">Ôø•32000.00</span>
+							</p>
+							
+						</div>
+					</div>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigÿ≠∑® Ω∏£¬•ÿ≠»’ Ω”£ª®÷˜Ã‚</h3>
-								<p className="p1">IRIS∂¿¡¢ªÈ¿Ò≤ﬂªÆÕ≈∂”</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
-							</div>
-						</li>
-					</ul>
-				</div>
+				
 					
 			</div>
 		)

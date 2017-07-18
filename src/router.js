@@ -41,13 +41,13 @@ const router = (
 
 			<Route path="/encyclopedias" component={Encyclopedias}/>
 			<Route path="/login" component={Login}/>
-			
+			<Route path="/geren" component={geren}/>
 			
 		<Redirect from="/" to="/zhuye" />
 		</Switch>			
 
 	</App>
-	<Route path="/geren" component={geren}/>
+	
 	</Router>
 	)
 export default router;

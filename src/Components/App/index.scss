@@ -44,21 +44,23 @@ li{
 
 
 #header{
-	position:fixed;
 	float:left;
+	background:pink;
 	width:px2rem(640px);
 	height:px2rem(90px);
-	background:red;
 	font-size:16px;
-}span{
-	// width:px2rem(35px);
-	color:#FF705E;
-	float:left;
-}	width:px2rem(380px);
-	height:px2rem(40px);
-	float:left;
-	border-radius:px2rem(20px);
 
-}
-}
+
+	span{
+		
+		color:#FF705E;
+		float:left;
+	}	
+	input{
+	    width:px2rem(380px);
+		height:px2rem(40px);
+		float:left;
+		border-radius:px2rem(20px);
+
+	}
 }

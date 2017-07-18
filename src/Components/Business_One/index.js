@@ -1,31 +1,21 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import React,{Component} from "react";
+ï»¿import React,{Component} from "react";
 import "./index.scss";
 import "../../assets/iconfont/iconfont.css";
+import img1 from "./img/tp.png";
+import img2 from "./img/mian.png";
+import img3 from "./img/jp.png";
+import img4 from "./img/bao.png";
+import img5 from "./img/tui.png";
+import img6 from "./img/nuo.png";
+import img7 from "./img/quan.png";
+import img8 from "./img/star.png";
+import img9 from "./img/star2.png";
+import img10 from "./img/tpt.jpg";
 import {
 	NavLink
 } from "react-router-dom";
 
-
+ 
 
 class Business_Case extends Component{
 	constructor(props) {
@@ -44,134 +34,295 @@ class Business_Case extends Component{
 					}
 				</section>	
 
-				<div id="daohang">
+				<div id="nav">
 					<ul>
-						<li>»éÀñ²ß»®<i className="iconfont more_unfold">&#xe6a6;</i></li>
-						<li>Ä¬ÈÏÅÅĞò<i className="iconfont more_unfold">&#xe6a6;</i></li>
+						<li>å©šç¤¼ç­–åˆ’<i className="iconfont i1">&#xe6a6;</i></li>
+						<li>å…¨åŸ<i className="iconfont i2">&#xe6a6;</i></li>
+						<li>é»˜è®¤æ’åº<i className="iconfont i3">&#xe6a6;</i></li>
+						<li>ç­›é€‰<i className="iconfont i4">&#xe6a6;</i></li>
 					</ul>
 				</div>
 
-				<div className="line"></div>
+				<div id="one">
+					<div className="cont">
+						<img src={img1}/>
+						<div className="text">
+							<h3>å–œæ¥å±‹å›½é™…å©šç¤¼ä¼šæ‰€</h3>
+							<img src={img2}/>
+							<ul>
+								<li>å¥—é¤5</li>
+								<li>æ¡ˆä¾‹7</li>
+								<li>ç²‰ä¸12</li>
+							</ul>
+						</div>
+					</div>
+					<p><span>åˆ°åº—ç¤¼</span>åˆ°åº—å¯é¢†å– å¥½æ¥å±‹å‡€æ°´å™¨</p>
+					<p className="tui">æ¨å¹¿</p>
+				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigØ­·¨Ê½¸£Â¥Ø­ÈÕÊ½Ó£»¨Ö÷Ìâ</h3>
-								<p className="p1">IRIS¶ÀÁ¢»éÀñ²ß»®ÍÅ¶Ó</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
+				<div className="line1"></div>
+
+				<div id="next">
+					<div className="cont">
+						<img src={img10}/>
+						<div className="text">
+							<h3 className="hh3">
+								<img src={img3}/>
+							çå¦®ç½—æ›¼VIPå›½é™…å©šç¤¼ç­–åˆ’
+							</h3>
+							
+							<div className="star-fans">
+								<ul className="star">
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img9} /></li>
+								</ul>
+								<div className="count">131æ¡</div>
+								<ul className="u1">
+								<li><img src={img2} /></li>
+								<li><img src={img4} /></li>
+								<li><img src={img5} /></li>
+								<li><img src={img6} /></li>
+								<li><img src={img7} /></li>
+							</ul>
 							</div>
-						</li>
-					</ul>
+							<ul className="fans">
+									<li>å¥—é¤91</li>
+									<li>æ¡ˆä¾‹104</li>
+									<li>ç²‰ä¸973</li>
+								</ul>
+						</div>
+					</div>
+					<p><span>åˆ°åº—ç¤¼</span>åˆ°åº—å¯é¢†å– å¥½æ¥å±‹å‡€æ°´å™¨</p>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigØ­·¨Ê½¸£Â¥Ø­ÈÕÊ½Ó£»¨Ö÷Ìâ</h3>
-								<p className="p1">IRIS¶ÀÁ¢»éÀñ²ß»®ÍÅ¶Ó</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
+				<div id="next">
+					<div className="cont">
+						<img src={img10}/>
+						<div className="text">
+							<h3 className="hh3">
+								<img src={img3}/>
+							çå¦®ç½—æ›¼VIPå›½é™…å©šç¤¼ç­–åˆ’
+							</h3>
+							
+							<div className="star-fans">
+								<ul className="star">
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img9} /></li>
+								</ul>
+								<div className="count">131æ¡</div>
+								<ul className="u1">
+								<li><img src={img2} /></li>
+								<li><img src={img4} /></li>
+								<li><img src={img5} /></li>
+								<li><img src={img6} /></li>
+								<li><img src={img7} /></li>
+							</ul>
 							</div>
-						</li>
-					</ul>
+							<ul className="fans">
+									<li>å¥—é¤91</li>
+									<li>æ¡ˆä¾‹104</li>
+									<li>ç²‰ä¸973</li>
+								</ul>
+						</div>
+					</div>
+					<p><span>åˆ°åº—ç¤¼</span>åˆ°åº—å¯é¢†å– å¥½æ¥å±‹å‡€æ°´å™¨</p>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigØ­·¨Ê½¸£Â¥Ø­ÈÕÊ½Ó£»¨Ö÷Ìâ</h3>
-								<p className="p1">IRIS¶ÀÁ¢»éÀñ²ß»®ÍÅ¶Ó</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
+
+<div id="next">
+					<div className="cont">
+						<img src={img10}/>
+						<div className="text">
+							<h3 className="hh3">
+								<img src={img3}/>
+							çå¦®ç½—æ›¼VIPå›½é™…å©šç¤¼ç­–åˆ’
+							</h3>
+							
+							<div className="star-fans">
+								<ul className="star">
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img9} /></li>
+								</ul>
+								<div className="count">131æ¡</div>
+								<ul className="u1">
+								<li><img src={img2} /></li>
+								<li><img src={img4} /></li>
+								<li><img src={img5} /></li>
+								<li><img src={img6} /></li>
+								<li><img src={img7} /></li>
+							</ul>
 							</div>
-						</li>
-					</ul>
+							<ul className="fans">
+									<li>å¥—é¤91</li>
+									<li>æ¡ˆä¾‹104</li>
+									<li>ç²‰ä¸973</li>
+								</ul>
+						</div>
+					</div>
+					<p><span>åˆ°åº—ç¤¼</span>åˆ°åº—å¯é¢†å– å¥½æ¥å±‹å‡€æ°´å™¨</p>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigØ­·¨Ê½¸£Â¥Ø­ÈÕÊ½Ó£»¨Ö÷Ìâ</h3>
-								<p className="p1">IRIS¶ÀÁ¢»éÀñ²ß»®ÍÅ¶Ó</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
+
+<div id="next">
+					<div className="cont">
+						<img src={img10}/>
+						<div className="text">
+							<h3 className="hh3">
+								<img src={img3}/>
+							çå¦®ç½—æ›¼VIPå›½é™…å©šç¤¼ç­–åˆ’
+							</h3>
+							
+							<div className="star-fans">
+								<ul className="star">
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img9} /></li>
+								</ul>
+								<div className="count">131æ¡</div>
+								<ul className="u1">
+								<li><img src={img2} /></li>
+								<li><img src={img4} /></li>
+								<li><img src={img5} /></li>
+								<li><img src={img6} /></li>
+								<li><img src={img7} /></li>
+							</ul>
 							</div>
-						</li>
-					</ul>
+							<ul className="fans">
+									<li>å¥—é¤91</li>
+									<li>æ¡ˆä¾‹104</li>
+									<li>ç²‰ä¸973</li>
+								</ul>
+						</div>
+					</div>
+					<p><span>åˆ°åº—ç¤¼</span>åˆ°åº—å¯é¢†å– å¥½æ¥å±‹å‡€æ°´å™¨</p>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigØ­·¨Ê½¸£Â¥Ø­ÈÕÊ½Ó£»¨Ö÷Ìâ</h3>
-								<p className="p1">IRIS¶ÀÁ¢»éÀñ²ß»®ÍÅ¶Ó</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
+
+<div id="next">
+					<div className="cont">
+						<img src={img10}/>
+						<div className="text">
+							<h3 className="hh3">
+								<img src={img3}/>
+							çå¦®ç½—æ›¼VIPå›½é™…å©šç¤¼ç­–åˆ’
+							</h3>
+							
+							<div className="star-fans">
+								<ul className="star">
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img9} /></li>
+								</ul>
+								<div className="count">131æ¡</div>
+								<ul className="u1">
+								<li><img src={img2} /></li>
+								<li><img src={img4} /></li>
+								<li><img src={img5} /></li>
+								<li><img src={img6} /></li>
+								<li><img src={img7} /></li>
+							</ul>
 							</div>
-						</li>
-					</ul>
+							<ul className="fans">
+									<li>å¥—é¤91</li>
+									<li>æ¡ˆä¾‹104</li>
+									<li>ç²‰ä¸973</li>
+								</ul>
+						</div>
+					</div>
+					<p><span>åˆ°åº—ç¤¼</span>åˆ°åº—å¯é¢†å– å¥½æ¥å±‹å‡€æ°´å™¨</p>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigØ­·¨Ê½¸£Â¥Ø­ÈÕÊ½Ó£»¨Ö÷Ìâ</h3>
-								<p className="p1">IRIS¶ÀÁ¢»éÀñ²ß»®ÍÅ¶Ó</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
+
+<div id="next">
+					<div className="cont">
+						<img src={img10}/>
+						<div className="text">
+							<h3 className="hh3">
+								<img src={img3}/>
+							çå¦®ç½—æ›¼VIPå›½é™…å©šç¤¼ç­–åˆ’
+							</h3>
+							
+							<div className="star-fans">
+								<ul className="star">
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img9} /></li>
+								</ul>
+								<div className="count">131æ¡</div>
+								<ul className="u1">
+								<li><img src={img2} /></li>
+								<li><img src={img4} /></li>
+								<li><img src={img5} /></li>
+								<li><img src={img6} /></li>
+								<li><img src={img7} /></li>
+							</ul>
 							</div>
-						</li>
-					</ul>
+							<ul className="fans">
+									<li>å¥—é¤91</li>
+									<li>æ¡ˆä¾‹104</li>
+									<li>ç²‰ä¸973</li>
+								</ul>
+						</div>
+					</div>
+					<p><span>åˆ°åº—ç¤¼</span>åˆ°åº—å¯é¢†å– å¥½æ¥å±‹å‡€æ°´å™¨</p>
 				</div>
 
-				<div id="cont">
-					<ul>
-						<li>
-							<div><img src="src/img/tp3.jpg"/></div>
-							<div className="text">
-								<h3>IRIS-weddigØ­·¨Ê½¸£Â¥Ø­ÈÕÊ½Ó£»¨Ö÷Ìâ</h3>
-								<p className="p1">IRIS¶ÀÁ¢»éÀñ²ß»®ÍÅ¶Ó</p>
-								<p className="p2">
-									<img className="star" src="src/img/star.png"/>
-									47
-									<span></span>
-								</p>
+
+<div id="next">
+					<div className="cont">
+						<img src={img10}/>
+						<div className="text">
+							<h3 className="hh3">
+								<img src={img3}/>
+							çå¦®ç½—æ›¼VIPå›½é™…å©šç¤¼ç­–åˆ’
+							</h3>
+							
+							<div className="star-fans">
+								<ul className="star">
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img8} /></li>
+									<li><img src={img9} /></li>
+								</ul>
+								<div className="count">131æ¡</div>
+								<ul className="u1">
+								<li><img src={img2} /></li>
+								<li><img src={img4} /></li>
+								<li><img src={img5} /></li>
+								<li><img src={img6} /></li>
+								<li><img src={img7} /></li>
+							</ul>
 							</div>
-						</li>
-					</ul>
+							<ul className="fans">
+									<li>å¥—é¤91</li>
+									<li>æ¡ˆä¾‹104</li>
+									<li>ç²‰ä¸973</li>
+								</ul>
+						</div>
+					</div>
+					<p><span>åˆ°åº—ç¤¼</span>åˆ°åº—å¯é¢†å– å¥½æ¥å±‹å‡€æ°´å™¨</p>
 				</div>
-					
+
+
+
+
+
 			</div>
 		)
 	}
