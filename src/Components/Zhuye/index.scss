@@ -1,5 +1,6 @@
-$ui-width: 320px;
+$ui-width: 6.4rem;
 @function px2rem($px) {
+    /*两倍*/
     @return $px/$ui-width*3.2rem;
 }
 *{
@@ -10,8 +11,540 @@ $ui-width: 320px;
 html,body{
 	width:100%;
 	height:100%;
+  font-size: 13px;
 }
 
 li{
 	list-style:none;
 }
+
+
+header{
+  width: 100%;
+  height:px2rem(90px);
+}
+#header_body{
+  width: px2rem(640px);
+  height:px2rem(90px);
+  background-color: #fff;
+  position: absolute;
+  z-index: 3;
+
+}
+#header_left{
+  display: inline-block;
+  background-color: #fff;
+  width:px2rem(140px);
+  font-size:px2rem(28px);
+  color: red;
+  line-height:px2rem(90px);
+  padding-left:px2rem(10px);
+  float: left;
+
+
+  }
+  #header_search{
+    display: inline-block;
+    width:px2rem(374px);
+    height: px2rem(56px);
+    font-size:px2rem(26px);
+    line-height:  px2rem(56px);
+    text-indent: 2em;
+    color: #707070;
+    float: left;
+    margin-top:  px2rem(15px);
+    margin-left:  px2rem(20px);
+    position: absolute;
+    top:px2rem(6px);
+    left: px2rem(100px);
+    z-index: 1;
+    border-radius:px2rem(374px);
+    border: soild 1px #aaa;
+    background-color:#f7f7f7;
+
+  }
+  .search{
+    width:px2rem(30px);
+    height:px2rem(30px);
+    position:absolute;
+    top:px2rem(14px);
+    left:px2rem(320px);
+  }
+  .shop{
+    width:px2rem(40px);
+    height:px2rem(40px);
+    position:absolute;
+    top:px2rem(30px);
+    left:px2rem(510px);
+  }
+  .self{
+    width:px2rem(40px);
+    height:px2rem(40px);
+    position:absolute;
+    top:px2rem(30px);
+    left:px2rem(574px);
+  }
+
+
+
+
+
+  #header_shop{
+    display: inline-block;
+    width:px2rem(60px);
+    height: px2rem(60px);
+    background-color: #fff;
+    float: right;
+    margin-top:px2rem(16px);
+    
+
+  }
+  #header_self{
+    display: inline-block;
+    width:px2rem(100px);
+    height: px2rem(60px);
+    background-color: #fff;
+    float: right;
+    margin-top:  px2rem(15px);
+  }
+  #header_nav{
+    width: 100%;
+    height:px2rem(320px);
+    background-color: #fff;
+    }
+  .nav{
+    width: 100%;
+    height:px2rem(320px);
+  }
+  #background_color{
+    background-color: #eee;
+    float: left;
+  }
+  #header_btn{
+    display: inline-block;
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+    width: 300px;
+    height: 80px;
+    background-color: #fff;
+    padding:10px;
+    float: left;
+  }
+  #header_btn img{
+    width: 48px;
+    height: 48px;
+  }
+  #header_btn li{
+    display:inline-block;
+    width: 75px;
+    height: 64px;
+    text-align: center;
+    margin-top: 0px;
+  }
+  #header_banner{
+    /*width: 100%;*/
+    height: 130px;
+    background-color:#fff;
+    float: left;
+    padding: 10px 8px;
+    margin-top: 10px;
+    
+  }
+   #header_banner div{
+    display: inline-block;
+    height: 130px;
+    margin-top: 10px;
+   }
+  #header_banner img{
+    width: 150px;
+    height: 130px;
+
+  }
+  .banner_ringht{
+    border-left: solid 1px #eee;
+  }
+  .banner_left{
+      border-right: solid 0px #eee;
+  }
+  #header_sale{
+    font-size: 13px;
+     clear: both;
+     padding-top: 10px;
+  }
+  .sale_title{
+      width:100%; 
+      height: 17px;
+      background-color: #fff;
+      clear: both;
+
+  }
+  .sale_title span{
+    float: left;
+    font-weight: 700;
+  }
+  .sale_title a{
+    float: right;
+    color: #777;
+    
+      }
+  .sale_nav{
+    width:100%;
+    height: 95px;
+    margin:10px 0px;
+    margin-top: 0px;
+    padding-top: 10px;
+    background-color: #fff;
+  }
+   .sale_nav img{
+    width: 116px;
+    height: 75px;
+
+   }
+   .sale_nav_span{
+    display: inline-block;
+    position:absolute;
+    z-index: 2;
+    font-size: 9px;
+    background-color: #fd68a8;
+    color:#fff;
+    padding: 0px 5px;
+   }
+   .sale_nav_item{
+    width:116px;
+    margin: 10px 10px;
+    display: inline-block;
+    
+   }
+   .sale_nav_text{
+    width:175px;
+    float: right; 
+    display: inline-block;
+
+   }
+   .sale_nav_title{
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    display: inline-block;
+    width: 174px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .sale_nav_price{
+    display: inline-block;
+    color: #f83244;
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: arial;
+    position: relative;
+  }
+  .sale_nav_old_price{
+    font-size: 14px;
+    display: inline-block;
+    color: #ccc;
+    text-decoration: line-through;
+    font-family: arial;
+
+  }
+  .sale_nav_star{
+    display: block;
+  }
+  .sale_nav_star_div1{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+  }
+  .sale_nav_star_div{
+    text-indent: 1em;
+    display: inline-block;
+    color: #ccc;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  #header_demo{
+     font-size: 13px;
+     clear: both;
+     padding-top: 10px;
+  }
+  .demo_title{
+    background-color: #fff;
+    height: 18px;
+    line-height: 18px;
+    font-size: 14px;
+    display: inline-block;
+    width:320px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .demo_title span{
+    float: left;
+    font-weight: 700;
+
+  }
+  .demo_title a{
+    float: right;
+    color: #777;
+     
+  }
+  .demo_nav{
+    width:320px;
+    height:160px;
+    margin:-10px 0px 0px;
+
+    padding-top:10px;
+    background-color: #fff;
+  }
+  .demo_nav_item{
+    width:116px;
+    margin: 10px 10px;
+    display: inline-block;
+    
+  }
+  .demo_nav_img{
+    width: 116px;
+    height: 75px;
+  }
+
+
+  .demo_nav_title{
+    height: 18px;
+    line-height: 18px;
+    color: #666;
+    cursor: pointer;
+    display: inline-block;
+    width: 117px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  #header_wedding{
+    margin-top: 10px;
+    width: 100%;
+    height: 290px;
+
+  }
+  .wedding_title{
+    display: inline-block;
+    width: 100%;
+    height: 20px;
+    margin-top: 0;
+    background-color: #fff;
+    padding-bottom: 10px;
+  }
+  .wedding_title span{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .wedding_nav {
+    background-color: #fff;
+  }
+  .wedding_nav a{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-decoration: none;
+    color: #444;
+    font-size: 12px;
+  }
+  .wedding_nav img{
+    width: 64px;
+    height: 64px;
+  }
+  .header_wedding_a{
+    color: #000;
+    width: 156px;
+    height: 192px;
+    text-decoration: none;
+    padding-bottom: 10px;
+
+  }
+  .header_wedding_a img{
+    display: block;
+    width: 148px;
+    height: 148px;
+  }
+  .header_wedding_a h4{
+    font-size: 14px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    width: 148px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+  }
+  .wedding_item_mn{
+    color: #f83244;
+    margin: 4px 4px;
+    font-size: 16px;
+  }
+  .wedding_right{
+    display: inline-block;
+    float: right;
+  }
+  #wedding_text{
+    width: 148px;
+  }
+  #header_wedding_item{
+    margin:0px;
+    background-color: #fff;
+  }
+  .wedding_item_num{
+   color:#ccc;
+   font-weight: 500;
+  }
+  #wedding_more{
+    background-color: #fff;
+    height: 14px;
+    padding: 12px;
+    text-align: center;
+   
+  }
+  #wedding_more a{
+    font-size: 13px;
+    width: 100%;
+    height: 14px;
+    padding: 12px;
+    line-height: 14px;
+    /*display: inline-block;*/
+    text-decoration: none;
+    color: #e00;
+  }
+  #beautiful_image{
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color:#fff;
+    height: 270px;
+  }
+  #beautiful_image span{
+    display: inline-block;
+    font-size: 13px;
+    float: left;
+  }
+  .beautiful_image_title{
+    padding-left:1em;
+    height: 17px;
+  }
+  .beautiful_image_title a{
+    display: inline-block;
+    font-size: 13px;
+    color: #ccc;
+    float: right;
+    
+  }
+   .beautiful_image_but{
+    width:320px;
+    height: 205px;
+    background-color: #fff;
+    margin:0 auto;
+   }
+   .beautiful_image_left{
+    float: left;
+    display:inline-block;
+    width: 180px;
+    height: 180px;
+    margin:15px;
+    margin-right: 0px;
+   }
+   .beautiful_image_left img{
+    width: 180px;
+    height: 180px;
+   }
+   .beautiful_image_right{
+     margin:5px;
+    float:right;
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+   }
+   .beautiful_image_right img{
+    width: 100px;
+    height: 100px;
+   }
+   .beautiful_image_right2{
+    margin-right: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+    float:right;
+    display:inline-block;
+    width: 100px;
+    height: 100px;
+   }
+    .beautiful_image_right2 img{
+     
+    width: 100px;
+    height: 100px;
+   }
+   #beautiful_image_btnn{
+    margin-top: 15px;
+    clear: both;
+
+
+   }
+   #beautiful_image_btn{
+
+
+    width: 300px;
+    height: 18px;
+    margin-left: 15px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    position: relative;
+    z-index: 3;
+
+   }
+   #beautiful_image_btn a{
+    text-decoration: none;
+    font-size: 13px;
+    color:#ccc;
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    padding:0px 2px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    border:solid 1px #888;
+    margin-right: 10px;
+    border-radius: 4px;
+    
+   }
+   #header_video{
+    background-color: #fff;
+
+    width: 320px;
+    height: 172px;
+    margin:20px auto;
+   }
+    #header_video  a,li{
+      display: inline-block;
+      width: 142px;
+      height: 108px;
+      margin:10px auto;
+    }
+   #header_video ul{
+    float: left;
+   }
+   #header_video img{
+    width: 142px;
+    height: 80px;
+
+   }
+   #header_video p{
+    width: 142px;
+    height: 40px;
+
+   }
+   .header_video1{
+    float: left;
+   }
+   .header_video2{
+    float:right;
+   }
+
+
