@@ -15,7 +15,7 @@ module.exports = {
     devServer: {
         inline:true,
         contentBase: "./",  //content not from webpack is serverd
-        port: '8384',
+        port: '8383',
 
         historyApiFallback: true,
 
