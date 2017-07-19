@@ -21,9 +21,9 @@ module.exports = {
 
             //配置服务器支持反向代理功能
         proxy:{
-           '/v4/api/*': {
-                  target: 'http://m.maizuo.com',
-                  host: 'm.maizuo.com',
+           'p/wedding/index.php/home/*': {
+                  target: 'http://m.hunliji.com',
+                  host: 'm.hunliji.com',
                   changeOrigin:true
               },
 
