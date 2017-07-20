@@ -10,7 +10,7 @@ import Zhuye from "./Components/Zhuye/index";
 import shuo from "./Components/shuo/index";
 import Login from "./Components/Login/index";
 import geren from "./Components/geren/index";
-
+import Register from "./Components/Register/index";
 
 import {
 	HashRouter as Router,
@@ -38,12 +38,12 @@ const router = (
 					</Business>
 				}/>
 			<Route path="/shuo" component={shuo}/>
-
 			<Route path="/encyclopedias" component={Encyclopedias}/>
 			<Route path="/login" component={Login}/>
 			<Route path="/geren" component={geren}/>
+			<Route path="/register" component={Register}/>
 			
-		<Redirect from="/" to="/zhuye" />
+			<Redirect from="/" to="/zhuye" />
 		</Switch>			
 
 	</App>
