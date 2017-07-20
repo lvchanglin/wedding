@@ -11,8 +11,8 @@ import shuo from "./Components/shuo/index";
 import Login from "./Components/Login/index";
 import geren from "./Components/geren/index";
 import Register from "./Components/Register/index";
-import List form "./Components/List/index";
-import Details form "./Components/Details/index";
+import List from "./Components/List/index";
+import Details from "./Components/Details/index";
 
 import {
 	HashRouter as Router,

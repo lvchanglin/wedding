@@ -21,15 +21,12 @@ module.exports = {
 
             //配置服务器支持反向代理功能
         proxy:{
-<<<<<<< HEAD
+         
            '/spider/*': {
                   target: 'http://10.2.154.99:3000',
                   host: '10.2.154.99:3000', 
-=======
-           'p/wedding/index.php/home/*': {
-                  target: 'http://m.hunliji.com',
-                  host: 'm.hunliji.com',
->>>>>>> e6c7977073d88acd0091412e57cebc0c4a3ef310
+
+           
                   changeOrigin:true
               },
 
