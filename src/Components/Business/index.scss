@@ -20,8 +20,9 @@ li{
 
 
 #buse{
-	position:absolute;
+	position:fixed;
 	top:0;
+	z-index:999;
 	background:#fff;
 	width:100%;
 	height:px2rem(90px);

@@ -3,6 +3,7 @@ import "./index.scss";
 import "../../assets/iconfont/iconfont.css";
 import img1 from "./img/tp.jpg";
 import img2 from "./img/1.png";
+import axios from "axios";
 import {
 	NavLink
 } from "react-router-dom";
@@ -12,14 +13,26 @@ import {
 class Business_Case extends Component{
 	constructor(props) {
 		super(props);
+		this.state={
+			ledOn:[]
+		}
 		
+	}
+
+	componentDidMount() {
+		axios.get("/spider/led3").then(res=>{
+			console.log(res.data);
+			this.setState({
+				ledOn:res.data.works
+			})
+		})
 	}
 
 
 	render() {
 		return (
 
-			<div>
+			<div id="case">
 				<section>
 					{
 						this.props.children
@@ -35,102 +48,27 @@ class Business_Case extends Component{
 
 				<div className="line"></div>
 
-			<div id="con">
-					<img src={img1}/>
-					<div className="text">
-						<h3>IRIS-weddig丨法式福楼丨日式樱花主题</h3>
-						
-						<div className="price">
-							<p className="p1">IRIS独立婚礼策划团队</p>
-							<p className="p2">
-								<span><img src={img2}/></span>
-								<span>7</span>
-							</p>
+			{
+				this.state.ledOn.map((item,index)=>
+					<div id="con" key={item.id}>
+						<img src={item.cover_path}/>
+						<div className="text">
+							<h3>{item.title}</h3>
 							
+							<div className="price">
+								<p className="p1">{item.merchant.name}</p>
+								<p className="p2">
+									<span><img src={img2}/></span>
+									<span>{item.collectors_count}</span>
+								</p>
+								
+							</div>
 						</div>
 					</div>
-				</div>
+					)
+			}
 
-				<div id="con">
-					<img src={img1}/>
-					<div className="text">
-						<h3>IRIS-weddig丨法式福楼丨日式樱花主题</h3>
-						
-						<div className="price">
-							<p className="p1">IRIS独立婚礼策划团队</p>
-							<p className="p2">
-								<span><img src={img2}/></span>
-								<span>7</span>
-							</p>
-							
-						</div>
-					</div>
-				</div>
-
-				<div id="con">
-					<img src={img1}/>
-					<div className="text">
-						<h3>IRIS-weddig丨法式福楼丨日式樱花主题</h3>
-						
-						<div className="price">
-							<p className="p1">IRIS独立婚礼策划团队</p>
-							<p className="p2">
-								<span><img src={img2}/></span>
-								<span>7</span>
-							</p>
-							
-						</div>
-					</div>
-				</div>
-
-				<div id="con">
-					<img src={img1}/>
-					<div className="text">
-						<h3>IRIS-weddig丨法式福楼丨日式樱花主题</h3>
-						
-						<div className="price">
-							<p className="p1">IRIS独立婚礼策划团队</p>
-							<p className="p2">
-								<span><img src={img2}/></span>
-								<span>7</span>
-							</p>
-							
-						</div>
-					</div>
-				</div>
-
-				<div id="con">
-					<img src={img1}/>
-					<div className="text">
-						<h3>IRIS-weddig丨法式福楼丨日式樱花主题</h3>
-						
-						<div className="price">
-							<p className="p1">IRIS独立婚礼策划团队</p>
-							<p className="p2">
-								<span><img src={img2}/></span>
-								<span>7</span>
-							</p>
-							
-						</div>
-					</div>
-				</div>
-
-				<div id="con">
-					<img src={img1}/>
-					<div className="text">
-						<h3>IRIS-weddig丨法式福楼丨日式樱花主题</h3>
-						
-						<div className="price">
-							<p className="p1">IRIS独立婚礼策划团队</p>
-							<p className="p2">
-								<span><img src={img2}/></span>
-								<span>7</span>
-							</p>
-							
-						</div>
-					</div>
-				</div>
-
+				
 
 
 

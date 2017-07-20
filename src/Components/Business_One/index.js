@@ -11,6 +11,7 @@ import img7 from "./img/quan.png";
 import img8 from "./img/star.png";
 import img9 from "./img/star2.png";
 import img10 from "./img/tpt.jpg";
+import axios from "axios";
 import {
 	NavLink
 } from "react-router-dom";
@@ -20,14 +21,29 @@ import {
 class Business_Case extends Component{
 	constructor(props) {
 		super(props);
+		this.state={
+			ledOne:[],
+			ledTwo:[]
+		}
+
 		
+	}
+	componentDidMount(){
+		axios.get("/spider/led").then(res=>{
+			console.log(res.data);
+			this.setState({
+				ledOne:res.data.data.normal_merchant.list,
+				ledTwo:res.data.data.popular_merchant.list
+
+			})
+		})
 	}
 
 
 	render() {
 		return (
 
-			<div>
+			<div id="Bone">
 				<section>
 					{
 						this.props.children
@@ -43,281 +59,80 @@ class Business_Case extends Component{
 					</ul>
 				</div>
 
-				<div id="one">
-					<div className="cont">
-						<img src={img1}/>
-						<div className="text">
-							<h3>喜来屋国际婚礼会所</h3>
-							<img src={img2}/>
-							<ul>
-								<li>套餐5</li>
-								<li>案例7</li>
-								<li>粉丝12</li>
-							</ul>
+				{
+					this.state.ledTwo.map((item,index)=>
+						<div id="one" key={item.id}>
+							<div className="cont">
+								<img src={item.logo_path}/>
+								<div className="text">
+									<h3>{item.name}</h3>
+									<img src={img2}/>
+									<ul>
+										<li>套餐{item.active_works_pcount}</li>
+										<li>案例{item.active_cases_pcount}</li>
+										<li>粉丝{item.fans_count}</li>
+									</ul>
+								</div>
+							</div>
+							<p><span>到店礼</span>到店可领取 好来屋净水器</p>
+							<p className="tui">推广</p>
 						</div>
-					</div>
-					<p><span>到店礼</span>到店可领取 好来屋净水器</p>
-					<p className="tui">推广</p>
-				</div>
 
+
+
+						)
+				}
+
+				
+
+				
 				<div className="line1"></div>
 
-				<div id="next">
-					<div className="cont">
-						<img src={img10}/>
-						<div className="text">
-							<h3 className="hh3">
-								<img src={img3}/>
-							珍妮罗曼VIP国际婚礼策划
-							</h3>
-							
-							<div className="star-fans">
-								<ul className="star">
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img9} /></li>
-								</ul>
-								<div className="count">131条</div>
-								<ul className="u1">
-								<li><img src={img2} /></li>
-								<li><img src={img4} /></li>
-								<li><img src={img5} /></li>
-								<li><img src={img6} /></li>
-								<li><img src={img7} /></li>
-							</ul>
+
+				{
+					this.state.ledOne.map((item,index)=>
+
+
+						<div id="next" key={item.id}>
+							<div className="cont">
+								<img src={item.logo_path}/>
+								<div className="text">
+									<h3 className="hh3">
+										<img src={img3}/>
+									{item.name}
+									</h3>
+									
+									<div className="star-fans">
+										<ul className="star">
+											<li><img src={img8} /></li>
+											<li><img src={img8} /></li>
+											<li><img src={img8} /></li>
+											<li><img src={img8} /></li>
+											<li><img src={img9} /></li>
+										</ul>
+										<div className="count">{item.comments_count}条</div>
+										<ul className="u1">
+										<li><img src={img2} /></li>
+										<li><img src={img4} /></li>
+										<li><img src={img5} /></li>
+										<li><img src={img6} /></li>
+										<li><img src={img7} /></li>
+									</ul>
+									</div>
+									<ul className="fans">
+											<li>套餐{item.active_works_pcount}</li>
+											<li>案例{item.active_cases_pcount}</li>
+											<li>粉丝{item.fans_count}</li>
+										</ul>
+								</div>
 							</div>
-							<ul className="fans">
-									<li>套餐91</li>
-									<li>案例104</li>
-									<li>粉丝973</li>
-								</ul>
+							<p><span>到店礼</span>到店可领取 好来屋净水器</p>
 						</div>
-					</div>
-					<p><span>到店礼</span>到店可领取 好来屋净水器</p>
-				</div>
-
-				<div id="next">
-					<div className="cont">
-						<img src={img10}/>
-						<div className="text">
-							<h3 className="hh3">
-								<img src={img3}/>
-							珍妮罗曼VIP国际婚礼策划
-							</h3>
-							
-							<div className="star-fans">
-								<ul className="star">
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img9} /></li>
-								</ul>
-								<div className="count">131条</div>
-								<ul className="u1">
-								<li><img src={img2} /></li>
-								<li><img src={img4} /></li>
-								<li><img src={img5} /></li>
-								<li><img src={img6} /></li>
-								<li><img src={img7} /></li>
-							</ul>
-							</div>
-							<ul className="fans">
-									<li>套餐91</li>
-									<li>案例104</li>
-									<li>粉丝973</li>
-								</ul>
-						</div>
-					</div>
-					<p><span>到店礼</span>到店可领取 好来屋净水器</p>
-				</div>
+						)
+				}
 
 
-<div id="next">
-					<div className="cont">
-						<img src={img10}/>
-						<div className="text">
-							<h3 className="hh3">
-								<img src={img3}/>
-							珍妮罗曼VIP国际婚礼策划
-							</h3>
-							
-							<div className="star-fans">
-								<ul className="star">
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img9} /></li>
-								</ul>
-								<div className="count">131条</div>
-								<ul className="u1">
-								<li><img src={img2} /></li>
-								<li><img src={img4} /></li>
-								<li><img src={img5} /></li>
-								<li><img src={img6} /></li>
-								<li><img src={img7} /></li>
-							</ul>
-							</div>
-							<ul className="fans">
-									<li>套餐91</li>
-									<li>案例104</li>
-									<li>粉丝973</li>
-								</ul>
-						</div>
-					</div>
-					<p><span>到店礼</span>到店可领取 好来屋净水器</p>
-				</div>
-
-
-<div id="next">
-					<div className="cont">
-						<img src={img10}/>
-						<div className="text">
-							<h3 className="hh3">
-								<img src={img3}/>
-							珍妮罗曼VIP国际婚礼策划
-							</h3>
-							
-							<div className="star-fans">
-								<ul className="star">
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img9} /></li>
-								</ul>
-								<div className="count">131条</div>
-								<ul className="u1">
-								<li><img src={img2} /></li>
-								<li><img src={img4} /></li>
-								<li><img src={img5} /></li>
-								<li><img src={img6} /></li>
-								<li><img src={img7} /></li>
-							</ul>
-							</div>
-							<ul className="fans">
-									<li>套餐91</li>
-									<li>案例104</li>
-									<li>粉丝973</li>
-								</ul>
-						</div>
-					</div>
-					<p><span>到店礼</span>到店可领取 好来屋净水器</p>
-				</div>
-
-
-<div id="next">
-					<div className="cont">
-						<img src={img10}/>
-						<div className="text">
-							<h3 className="hh3">
-								<img src={img3}/>
-							珍妮罗曼VIP国际婚礼策划
-							</h3>
-							
-							<div className="star-fans">
-								<ul className="star">
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img9} /></li>
-								</ul>
-								<div className="count">131条</div>
-								<ul className="u1">
-								<li><img src={img2} /></li>
-								<li><img src={img4} /></li>
-								<li><img src={img5} /></li>
-								<li><img src={img6} /></li>
-								<li><img src={img7} /></li>
-							</ul>
-							</div>
-							<ul className="fans">
-									<li>套餐91</li>
-									<li>案例104</li>
-									<li>粉丝973</li>
-								</ul>
-						</div>
-					</div>
-					<p><span>到店礼</span>到店可领取 好来屋净水器</p>
-				</div>
-
-
-<div id="next">
-					<div className="cont">
-						<img src={img10}/>
-						<div className="text">
-							<h3 className="hh3">
-								<img src={img3}/>
-							珍妮罗曼VIP国际婚礼策划
-							</h3>
-							
-							<div className="star-fans">
-								<ul className="star">
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img9} /></li>
-								</ul>
-								<div className="count">131条</div>
-								<ul className="u1">
-								<li><img src={img2} /></li>
-								<li><img src={img4} /></li>
-								<li><img src={img5} /></li>
-								<li><img src={img6} /></li>
-								<li><img src={img7} /></li>
-							</ul>
-							</div>
-							<ul className="fans">
-									<li>套餐91</li>
-									<li>案例104</li>
-									<li>粉丝973</li>
-								</ul>
-						</div>
-					</div>
-					<p><span>到店礼</span>到店可领取 好来屋净水器</p>
-				</div>
-
-
-<div id="next">
-					<div className="cont">
-						<img src={img10}/>
-						<div className="text">
-							<h3 className="hh3">
-								<img src={img3}/>
-							珍妮罗曼VIP国际婚礼策划
-							</h3>
-							
-							<div className="star-fans">
-								<ul className="star">
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img8} /></li>
-									<li><img src={img9} /></li>
-								</ul>
-								<div className="count">131条</div>
-								<ul className="u1">
-								<li><img src={img2} /></li>
-								<li><img src={img4} /></li>
-								<li><img src={img5} /></li>
-								<li><img src={img6} /></li>
-								<li><img src={img7} /></li>
-							</ul>
-							</div>
-							<ul className="fans">
-									<li>套餐91</li>
-									<li>案例104</li>
-									<li>粉丝973</li>
-								</ul>
-						</div>
-					</div>
-					<p><span>到店礼</span>到店可领取 好来屋净水器</p>
-				</div>
+				
 
 
 

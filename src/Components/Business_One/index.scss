@@ -1,4 +1,5 @@
-$ui-width: 320px;
+#Bone{
+	$ui-width: 320px;
 @function px2rem($px) {
     @return $px/$ui-width*3.2rem;
 }
@@ -22,8 +23,10 @@ li{
 	display:none;
 }
 #nav{
+	z-index:999;
 	background:#fff;
-	position:absolute;
+	background:#fff;
+	position:fixed;
 	top:px2rem(90px);
 	width:100%;
 	height:px2rem(80px);
@@ -272,4 +275,6 @@ li{
 	    }
 	}
 	
+}
+
 }
