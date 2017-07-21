@@ -12,7 +12,19 @@ class Login extends Component{
 		super(props);
 		
 	}
+ 
+	handleClick(){
+		// alert("11");
+		var username = document.getElementsByClassName("username")[0].value;
+		// var password = document.getElementsByClsaaName("password")[0].value;
+		let that = this;
+			let re = /^\w{6,16}$/g;
+				if(!re.test(this.username)){
+					alert("请输入6到16位英文数字下划线");
+					return;
+				}
 
+	}
 
 	render() {
 		return (
@@ -25,14 +37,15 @@ class Login extends Component{
 					<span><img src="http://qnm.hunliji.com/o_1aqo0ebjv1vf81smm8g91dnu1vc31s.png"/></span>
 				</div>
 				<div id="log_input">
-					<input type="text" placeholder="请输入手机号"/>
+					<input type="text" placeholder="请登入用户名" className="username"/>
 						<span className="one">
 							<i className="iconfont icon-phone"></i>
 						</span>
-					<input type="text" placeholder="请输入字符验证码"/>
-						<div id="zifu-yz"></div>
-					<input type="text" placeholder="请输入验证码"/>
-					<button>注册</button>
+					<input type="password" placeholder="请输入密码" className="password"/>
+					<input type="password" placeholder="再次输入密码" className="repass"/>
+					<button onClick={this.handleClick.bind(this)}>注册</button>
+
+
 				</div>
 					<section>
 					{

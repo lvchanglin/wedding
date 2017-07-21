@@ -15,3 +15,145 @@ html,body{
 li{
 	list-style:none;
 }
+
+#logal{
+	width:100%;
+	height:px2rem(88px);
+	float:left;
+	background:red;
+}
+a{text-decoration: none;
+ }
+
+header{
+		float:left;
+		width:100%;
+		height:px2rem(88px);
+		line-height:px2rem(88px);
+		font-size:px2rem(30px);
+		background:#fff;
+		border-bottom:px2rem(2px) solid #ccc;
+
+	.left{
+		float:left;
+		.ico1{
+		float:left;
+		color:#ff705e;
+		font-size:px2rem(30px);
+		}
+		.s1{
+		float:left;
+		display:inline-block;
+		margin-left:px2rem(80px);
+		}
+
+	}
+	.right{
+		float:right;
+		.s2{
+		display:inline-block;
+		margin-right:px2rem(80px);
+		}
+		.ico2{
+		color:#ff705e;
+		font-size:px2rem(30px);
+		}
+	}
+}
+
+.banner{
+	float:left;
+	width:100%;
+	height:px2rem(830px);
+	background:#f4f4f3;
+	margin-bottom:px2rem(20px);
+	.li-div{
+		margin-top:px2rem(20px);
+		margin-left:px2rem(40px);
+		margin-bottom:px2rem(20px);
+		margin-right:px2rem(40px);
+		width:100%;
+		height:px2rem(120px);
+		background:#fff;
+		img{
+			margin-left:px2rem(20px);
+			margin-top:px2rem(20px);
+			width:px2rem(80px);
+	        border-radius:50%;
+	        float:left;
+		}
+
+		p{
+			margin-left:px2rem(20px);
+			margin-top:px2rem(40px);
+			font-size:px2rem(28px);
+			width:px2rem(412px);
+			a{
+				margin-top:px2rem(40px);
+				color:#333;
+			}
+		}
+
+		p{	
+			margin-left:px2rem(5px);
+			margin-top:px2rem(10px);
+			float:left;
+			font-size:px2rem(28px);
+			width:px2rem(412px);
+			color: #999;
+			.p-s1{
+				color: #999;
+			}
+		}
+
+		.ico3{
+			display:inline-block;
+			padding-top:px2rem(50px);
+			font-weight:bold;
+			color:black;
+			font-size:px2rem(30px);
+			margin-bottom:px2rem(60px);
+		}
+	}
+}
+
+.bottom3{
+	margin-top:px2rem(10px);
+	width:100%;
+	height:px2rem(1800px);
+	background:#fff;
+	float:left;
+	.bottom3-div{
+		width:100%;
+		height:px2rem(180px);
+		border-bottom:px2rem(2px) solid #ccc;
+		background:#fff;
+		img{
+			width:px2rem(140px);
+			float:left;
+			margin-right:px2rem(20px);
+			margin-left:px2rem(40px);
+			margin-top:px2rem(20px);
+		}
+		h3{
+			padding-top:px2rem(20px);
+			font-size:px2rem(32px);
+			color:#333;
+			font-weight:100;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow:hidden;
+
+		}
+		p{
+			padding-top:px2rem(8px);
+			font-size:px2rem(28px);
+			color:#999;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow:hidden;
+
+		}
+	}
+
+}
