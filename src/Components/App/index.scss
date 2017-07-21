@@ -1,26 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $ui-width: 320px;
 @function px2rem($px) {
     @return $px/$ui-width*3.2rem;
@@ -42,25 +19,25 @@ li{
 }
 
 
-
+/*
 #header{
 	float:left;
-	background:pink;
 	width:px2rem(640px);
 	height:px2rem(90px);
 	font-size:16px;
-
-
-	span{
-		
-		color:#FF705E;
-		float:left;
-	}	
-	input{
-	    width:px2rem(380px);
-		height:px2rem(40px);
-		float:left;
-		border-radius:px2rem(20px);
-
-	}
 }
+
+input{
+	width:px2rem(380px);
+	height:px2rem(40px);
+	float:left;
+	border-radius:px2rem(20px);
+
+}
+
+span{
+	// width:px2rem(35px);
+	color:#FF705E;
+	float:left;
+}
+张小宇2017-7-17 09:54:50*/

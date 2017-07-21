@@ -7,8 +7,6 @@ $ui-width: 320px;
 	padding:0px;
 }
 
-
-
 html,body{
 	width:100%;
 	height:100%;
@@ -18,59 +16,22 @@ li{
 	list-style:none;
 }
 
-
+.bgcolor{
+	color:#FF705E;
+	
+}
 #buse{
-	position:fixed;
-	top:0;
-	z-index:999;
-	background:#fff;
-	width:100%;
+	float:left;
+	
 	height:px2rem(90px);
-	display:flex;
-	justify-content:space-around;
-	.a1{
-		width:px2rem(88px);
-		height:px2rem(88px);
-		line-height:px2rem(88px);
-		text-decoration:none;
-		color:#f83244;
-		font-size:32px;
-		.iconfont{
-			font-size:32px;
-		}
+	li{
+		line-height:px2rem(90px);
+		border-bottom:5px solid #FF705E;
+		float:left;
+		width:px2rem(150px);
+		font-size:16px;
+		margin-left: px2rem(10px);
+    text-align: center
 	}
-	.a2{
-		width:px2rem(88px);
-		height:px2rem(88px);
-		line-height:px2rem(88px);
-		position:relative;
-		img{
-			width:px2rem(38px);
-			position:absolute;
-			top:px2rem(24px);
-			right:px2rem(20px);
-		}
-	}
-	ul{
-		width:60%;
-		li{
-			float:left;
-			width:33.3%;
-			height:px2rem(88px);
-			line-height:px2rem(88px);
-			text-align:center;
-			margin:0;
-			a{
-				display:inline-block;
-				height:px2rem(88px);
-				padding:0 px2rem(12px);
-				color:#666;
-				font-size:14px;
-			}
-			a:hover{
-				border-bottom:2px solid #f83244;
-				color:#f83244;
-			}
-		}
-	}
+
 }

@@ -7,109 +7,11 @@ $ui-width: 320px;
 	padding:0px;
 }
 
-
-
 html,body{
 	width:100%;
 	height:100%;
-	background:#f4f4f3;
 }
 
 li{
 	list-style:none;
-}
-#header{
-	display:none;
-}
-.line{
-	margin-top:px2rem(170px);
-}
-#nav{
-	background:#fff;
-	position:fixed;
-	top:px2rem(90px);
-	width:100%;
-	height:px2rem(80px);
-	ul{
-		width:100%;
-		height:100%;
-		li{
-			float:left;
-			width:50%;
-			height:px2rem(80px);
-			line-height:px2rem(80px);
-			text-align:center;
-			margin:0;
-			color:#666;
-			position:relative;
-			.iconfont{
-				position:absolute;
-				top:px2rem(5px);
-				right:0;
-				font-size:12px;
-				padding-right:px2rem(20px);
-			}
-			.i1{
-				right:px2rem(50px);
-			}
-			.i3{
-				right:px2rem(50px);
-			}
-		}
-	}
-}
-
-#con{
-	margin:px2rem(20px) px2rem(30px) 0 px2rem(30px) ;
-	background:#fff;
-	height:px2rem(570px);
-	img{
-		width:100%;
-		height:px2rem(450px);
-		display:block;
-	}
-	.text{
-		width:px2rem(540px);
-		height:px2rem(80px);
-		padding:px2rem(20px);
-		h3{
-			font-size: 14px;
-		    color: #333;
-		    margin-bottom:px2rem(12px);
-		    text-overflow: ellipsis;
-		    overflow: hidden;
-		    white-space: nowrap;
-		    font-weight:400;
-		}
-	}
-	.price{
-		.p1{
-			font-size: 12px;
-		    line-height:px2rem(28px);
-		    color: #999;
-		    float:left;
-		}
-		.p2{
-			width:px2rem(300px);
-			font-size: 12px;
-		    line-height:px2rem(28px);
-		    color: #999;
-		    float:right;
-		    margin-right:px2rem(10px);
-		    .real{
-		    	display:inline-block;
-		    	width:40%;
-		    	float:right;
-		    	font-size:12px;
-		    }
-		    .sale{
-		    	display:inline-block;
-		    	width:50%;
-		    	float:left;
-		    	font-size: 14px;
-			    color: #f83244;
-			    margin-right:px2rem(10px);
-		    }
-		}
-	}
 }
