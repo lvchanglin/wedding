@@ -1,0 +1,195 @@
+$ui-width: 320px;
+@function px2rem($px) {
+    @return $px/$ui-width*3.2rem;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+#darui {
+	width: px2rem(640px);
+	background-color:lightgray;
+}
+
+#darui-tupian {
+	width: px2rem(640px);
+	height: px2rem(640px);
+	float: left;
+}
+
+#darui-jieshao {
+	width: px2rem(640px);
+	height: px2rem(180px);
+	background-color:white;
+	float:left;
+}
+
+#darui-mingcheng {
+	font-size: px2rem(32px)px;
+	line-height: px2rem(44px)px;
+	color: #333;
+	float: left;
+	padding-top: px2rem(20px)px;
+	width: px2rem(620px);
+	height: px2rem(24px);
+}
+
+#darui-jiage {
+	font-size: px2rem(40px);
+	line-height: 100%;
+	color: #f83244;
+	margin-top: px2rem(30px);
+	margin-right: px2rem(24px);
+	float: left;
+	width: px2rem(400px);
+	height: px2rem(40px);
+}
+
+#darui-yunfei {
+	float: left;
+	font-size: px2rem(24px);
+	line-height: 100%;
+	color: #aaa;
+	margin-top: px2rem(48px);
+	width: px2rem(144px);
+	height: px2rem(24px);
+}
+
+#darui-tuihuo{
+	width: px2rem(576px);
+	height: px2rem(60px);
+	float: left;
+	border-top:px2rem(2px) solid;
+	margin-top: px2rem(18px);
+	color: lightgray;
+	align-items: center;
+	display: flex;
+}
+
+#darui-wenzi{
+	padding-left: px2rem(36px);
+    height: px2rem(24px);
+    font-size: px2rem(24px);
+    line-height: px2rem(28px);
+    color: #666;
+    margin-right: px2rem(60px);
+    background: url(http://qnm.hunliji.com/o_1bbvkju8p1tmu7iqretdbn17dq1f.png) 0 no-repeat;
+    background-size: px2rem(28px) px2rem(28px);
+}
+
+#darui-shangjia{
+    background-color: white;
+    margin-top: px2rem(10px);
+    width:  px2rem(640px);
+    height:  px2rem(152px);
+    float:left;
+    position:relative;
+}
+
+#darui-tupian2{
+	width: px2rem(88px);
+	height: px2rem(88px);
+	padding: px2rem(30px);
+	float:left;
+}
+
+
+
+#darui-shangpindianming{
+    font-size: px2rem(28px);
+    line-height: px2rem(32px);
+    color: #333;
+    margin-top: px2rem(6px);
+    width: px2rem(140px);
+    height:px2rem(32px);
+    float: left;
+    position:absolute;
+    top: px2rem(36px);
+    left: px2rem(126px);
+}
+
+#darui-110{
+	font-size: px2rem(24px);
+    line-height: 100%;
+    color: #999;
+    float: left;
+    position:absolute;
+    top: px2rem(86px);
+    left: px2rem(126px);
+}
+
+#darui-guanzhu{
+	font-size: px2rem(24px);
+    line-height: 100%;
+    color: #999;
+    margin-right: px2rem(32px);
+    float: left;
+    position:absolute;
+    top: px2rem(86px);
+    left: px2rem(246px);
+}
+
+#baozhanga{
+	width: px2rem(32px);
+	height: px2rem(32px);
+    background: url(http://qnm.hunliji.com/o_1bbvkju8pbn21dmeg8h1mcmmif1d.png) 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+#darui-jindian{
+	display: block;
+    width: px2rem(136px)px;
+    height: px2rem(48px);
+    border-radius: px2rem(24px);
+    font-size: px2rem(26px);
+    line-height: px2rem(48px);
+    text-align: center;
+    color: #fff;
+    background: #ffaf24;
+    border:none;
+    float: left;
+    position:absolute;
+    top: px2rem(56px);
+    left: px2rem(456px);
+}
+
+#darui-tupian3{
+	width: px2rem(640px);
+	margin-top:px2rem(18px);
+	float:left;
+	background-color:white;
+}
+
+#darui-tupiankuangzi{
+	width: px2rem(640px);
+}
+
+#darui-gouwuche-anniu{
+	width: px2rem(640px);
+	height: px2rem(100px);
+	position: fixed;
+    bottom: 0px;
+}
+
+#darui-gouwuche-anniu2{
+	width:40%;
+	font-size: 15px;
+    color: #f83244;
+    height: px2rem(100px);
+    border:none;
+    background-color:white;
+}
+#darui-gouwuche-anniu3{
+	width:30%;
+	background-color:#ffaf24;
+	height: px2rem(100px);
+	border:none;
+	color:white;
+}
+#darui-gouwuche-anniu4{
+	width:30%;
+	background-color:#f83244;
+	height: px2rem(100px);
+	border:none;
+	color:white;
+}

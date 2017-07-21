@@ -31,6 +31,7 @@ class Login extends Component{
 
 			<div>
 
+<<<<<<< HEAD
 				<div id="log-header">
 					<a><img src="http://qnm.hunliji.com/o_1aqo07d2j1bot1t9scq6kql139v7.png"/></a>
 					<p>手机号快速登录</p>
@@ -48,6 +49,9 @@ class Login extends Component{
 
 				</div>
 					<section>
+=======
+					登录<section>
+>>>>>>> b8df5e9da2a154266e3e5ea9e07a2ddb95ac36c9
 					{
 						this.props.children
 					}

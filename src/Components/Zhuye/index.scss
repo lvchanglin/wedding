@@ -1,31 +1,36 @@
 $ui-width: 6.4rem;
 @function px2rem($px) {
     /*两倍*/
-    @return $px/$ui-width*3.2rem;
+    @return $px/$ui-width*3.2*2rem;
 }
 *{
-	margin:0px;
-	padding:0px;
+	margin :px2rem(0px);
+	padding :px2rem(0px);
 }
-
+ 
 html,body{
 	width:100%;
 	height:100%;
-  font-size: 13px;
+  font-size: px2rem(13px);
 }
-
+ 
 li{
 	list-style:none;
 }
+#bingBody{
+  margin:px2rem(0px)   auto;
+  width:px2rem(320px);
+  overflow:hidden;
+}
 
-
+ 
 header{
   width: 100%;
-  height:px2rem(90px);
+  height:px2rem(45px);
 }
 #header_body{
-  width: px2rem(640px);
-  height:px2rem(90px);
+  width: px2rem(320px);
+  height:px2rem(45px);
   background-color: #fff;
   position: absolute;
   z-index: 3;
@@ -34,55 +39,55 @@ header{
 #header_left{
   display: inline-block;
   background-color: #fff;
-  width:px2rem(140px);
-  font-size:px2rem(28px);
+  width:px2rem(70px);
+  font-size:px2rem(14px);
   color: red;
-  line-height:px2rem(90px);
-  padding-left:px2rem(10px);
+  line-height:px2rem(45px);
+  padding-left:px2rem(5px);
   float: left;
 
 
   }
   #header_search{
     display: inline-block;
-    width:px2rem(374px);
-    height: px2rem(56px);
-    font-size:px2rem(26px);
-    line-height:  px2rem(56px);
+    width:px2rem(187px);
+    height: px2rem(28px);
+    font-size:px2rem(13px);
+    line-height:  px2rem(28px);
     text-indent: 2em;
     color: #707070;
     float: left;
-    margin-top:  px2rem(15px);
-    margin-left:  px2rem(20px);
+    margin-top: px2rem( 7px);
+    margin-left:  px2rem(10px);
     position: absolute;
-    top:px2rem(6px);
-    left: px2rem(100px);
+    top:px2rem(3px);
+    left: px2rem(50px);
     z-index: 1;
-    border-radius:px2rem(374px);
-    border: soild 1px #aaa;
+    border-radius:px2rem(187px);
+    border: soild px2rem( 1px) #aaa;
     background-color:#f7f7f7;
 
   }
   .search{
-    width:px2rem(30px);
-    height:px2rem(30px);
+    width:px2rem(15px);
+    height:px2rem(15px);
     position:absolute;
-    top:px2rem(14px);
-    left:px2rem(320px);
+    top:px2rem(7px);
+    left:px2rem(160px);
   }
   .shop{
-    width:px2rem(40px);
-    height:px2rem(40px);
+    width:px2rem(20px);
+    height:px2rem(20px);
     position:absolute;
-    top:px2rem(30px);
-    left:px2rem(510px);
+    top:px2rem(15px);
+    left:px2rem(255px);
   }
   .self{
-    width:px2rem(40px);
-    height:px2rem(40px);
+    width:px2rem(20px);
+    height:px2rem(20px);
     position:absolute;
-    top:px2rem(30px);
-    left:px2rem(574px);
+    top:px2rem(15px);
+    left:px2rem(287px);
   }
 
 
@@ -91,90 +96,95 @@ header{
 
   #header_shop{
     display: inline-block;
-    width:px2rem(60px);
-    height: px2rem(60px);
+    width:px2rem(30px);
+    height:px2rem(30px);
     background-color: #fff;
     float: right;
-    margin-top:px2rem(16px);
+    margin-top:px2rem(8px);
     
 
   }
   #header_self{
     display: inline-block;
-    width:px2rem(100px);
-    height: px2rem(60px);
+    width:px2rem(50px);
+    height: px2rem(30px);
     background-color: #fff;
     float: right;
-    margin-top:  px2rem(15px);
+    margin-top:px2rem(7px);
   }
-  #header_nav{
+  .header_nav{
     width: 100%;
-    height:px2rem(320px);
+    height:px2rem(160px);
     background-color: #fff;
     }
-  .nav{
+  .header_nav>div img{
     width: 100%;
-    height:px2rem(320px);
+    height:px2rem(160px);
   }
   #background_color{
+    width: px2rem(320px);
     background-color: #eee;
     float: left;
   }
   #header_btn{
     display: inline-block;
     color: #999;
-    font-size: 12px;
+    font-size: px2rem(12px);
     font-weight: 400;
-    width: 300px;
-    height: 80px;
+    width: px2rem(300px);
+    height: px2rem(80px);
     background-color: #fff;
-    padding:10px;
+    padding:px2rem(10px);
     float: left;
   }
   #header_btn img{
-    width: 48px;
-    height: 48px;
+    width: px2rem(48px);
+    height: px2rem(48px);
   }
   #header_btn li{
     display:inline-block;
-    width: 75px;
-    height: 64px;
+    width: px2rem(75px);
+    height: px2rem(64px);
     text-align: center;
-    margin-top: 0px;
+    margin-top:px2rem( 0px);
+  }
+  #header_btn h5{
+    text-decoration: none;
+    color: #333;
   }
   #header_banner{
     /*width: 100%;*/
-    height: 130px;
+    height: px2rem(130px);
     background-color:#fff;
     float: left;
-    padding: 10px 8px;
-    margin-top: 10px;
+    padding: px2rem(10px) px2rem( 8px);
+    margin-top: px2rem(10px);
     
   }
    #header_banner div{
     display: inline-block;
-    height: 130px;
-    margin-top: 10px;
+    height: px2rem(130px);
+    margin-top: px2rem(10px);
    }
   #header_banner img{
-    width: 150px;
-    height: 130px;
+    width: px2rem(150px);
+    height:px2rem(130px);
 
   }
   .banner_ringht{
-    border-left: solid 1px #eee;
+    border-left: solid px2rem( 1px) #eee;
   }
   .banner_left{
-      border-right: solid 0px #eee;
+      border-right: solid px2rem( 0px) #eee;
   }
   #header_sale{
-    font-size: 13px;
+    font-size: px2rem(13px);
      clear: both;
-     padding-top: 10px;
+     padding-top: px2rem(10px);
   }
   .sale_title{
       width:100%; 
-      height: 17px;
+      height: px2rem(17px);
       background-color: #fff;
       clear: both;
 
@@ -190,44 +200,45 @@ header{
       }
   .sale_nav{
     width:100%;
-    height: 95px;
-    margin:10px 0px;
-    margin-top: 0px;
-    padding-top: 10px;
+    height: px2rem(95px);
+    margin:px2rem(10px) px2rem( 0px);
+    margin-top:px2rem( 0px);
+    padding-top: px2rem(10px);
     background-color: #fff;
   }
    .sale_nav img{
-    width: 116px;
-    height: 75px;
+    width: px2rem(116px);
+    height: px2rem(75px);
 
    }
    .sale_nav_span{
     display: inline-block;
     position:absolute;
     z-index: 2;
-    font-size: 9px;
+    font-size:px2rem( 9px);
     background-color: #fd68a8;
     color:#fff;
-    padding: 0px 5px;
+    padding:px2rem( 0px) px2rem( 5px);
    }
    .sale_nav_item{
-    width:116px;
-    margin: 10px 10px;
+    width:px2rem(116px);
+    margin: px2rem(10px) px2rem(10px);
     display: inline-block;
     
    }
    .sale_nav_text{
-    width:175px;
+    width:px2rem(175px);
     float: right; 
     display: inline-block;
 
    }
    .sale_nav_title{
-    height: 18px;
-    line-height: 18px;
-    font-size: 14px;
+    padding-top: px2rem(10px);
+    height: px2rem(18px);
+    line-height: px2rem(18px);
+    font-size: px2rem(13px);
     display: inline-block;
-    width: 174px;
+    width: px2rem(174px);
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -235,13 +246,13 @@ header{
   .sale_nav_price{
     display: inline-block;
     color: #f83244;
-    padding-left: 10px;
-    font-size: 16px;
+    padding-left: px2rem(10px);
+    font-size: px2rem(16px);
     font-family: arial;
     position: relative;
   }
   .sale_nav_old_price{
-    font-size: 14px;
+    font-size: px2rem(14px);
     display: inline-block;
     color: #ccc;
     text-decoration: line-through;
@@ -252,8 +263,8 @@ header{
     display: block;
   }
   .sale_nav_star_div1{
-    width: 10px;
-    height: 10px;
+    width:px2rem( 8px);
+    height:px2rem( 8px);
     display: inline-block;
   }
   .sale_nav_star_div{
@@ -261,23 +272,27 @@ header{
     display: inline-block;
     color: #ccc;
     font-weight: 500;
-    font-size: 12px;
+    font-size: px2rem(12px);
   }
   #header_demo{
-     font-size: 13px;
+    overflow:hidden;
+    width: px2rem(320px);
+     font-size: px2rem(13px);
      clear: both;
-     padding-top: 10px;
+     padding-top: px2rem(10px);
   }
   .demo_title{
     background-color: #fff;
-    height: 18px;
-    line-height: 18px;
-    font-size: 14px;
+    height: px2rem(28px);
+    line-height: px2rem(30px);
+    font-size: px2rem(14px);
     display: inline-block;
-    width:320px;
-    overflow: hidden;
+    width:px2rem(310px);
+    overflow: hidden; 
     white-space: nowrap;
     text-overflow: ellipsis;
+    margin-bottom: -px2rem(10px);
+    padding-left:px2rem( 5px);
   }
   .demo_title span{
     float: left;
@@ -289,107 +304,158 @@ header{
     color: #777;
      
   }
-  .demo_nav{
-    width:320px;
-    height:160px;
-    margin:-10px 0px 0px;
+  #demo_border{
+    width:px2rem(1000px);
+    height:px2rem(140px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+#zzzzzzzzzzzzz{
+    width:px2rem(320px);
+    height:px2rem(140px);
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #fff;
 
-    padding-top:10px;
+
+}
+
+
+
+   ::-webkit-scrollbar{width:px2rem(0px)}
+   #demo_border>div{
+      display: inline-block;
+      width: px2rem(130px);
+      height: px2rem(120px);
+      float: left;
+   }
+
+  .demo_body{
+    display: inline-block;
+    background-color: #fff;
+    width:px2rem(130px);
+    height:px2rem(120px);
+   
+  }
+
+ 
+
+
+
+
+  .demo_nav{
+    width:px2rem(135px);
+    height:px2rem(125px);
+  
     background-color: #fff;
   }
   .demo_nav_item{
-    width:116px;
-    margin: 10px 10px;
+    width:px2rem(116px);
+    padding-top: px2rem(20px) ;
+    margin-left: px2rem(10px);
     display: inline-block;
     
   }
   .demo_nav_img{
-    width: 116px;
-    height: 75px;
+    width: px2rem(116px);
+    height: px2rem(75px);
   }
 
 
   .demo_nav_title{
-    height: 18px;
-    line-height: 18px;
+    height: px2rem(20px);
+    line-height: px2rem(18px);
     color: #666;
     cursor: pointer;
     display: inline-block;
-    width: 117px;
+    width: px2rem(117px);
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
+    margin-left:px2rem( 8px);
+    background-color: #eee;
   }
   #header_wedding{
-    margin-top: 10px;
-    width: 100%;
-    height: 290px;
+    background-color: #fff;
+    margin-top: px2rem(10px);
+    width: px2rem(320px);
+    height: px2rem(310px);
 
   }
   .wedding_title{
     display: inline-block;
     width: 100%;
-    height: 20px;
+    height: px2rem(20px);
     margin-top: 0;
     background-color: #fff;
-    padding-bottom: 10px;
+    padding-bottom: px2rem(10px);
   }
   .wedding_title span{
-    font-size: 15px;
+    font-size: px2rem(15px);
     font-weight: 700;
   }
+
   .wedding_nav {
+    display: inline-block;float: left;
+    padding-bottom: px2rem(10px); 
     background-color: #fff;
   }
   .wedding_nav a{
+    text-align: center;
     display: inline-block;
-    width: 80px;
-    height: 80px;
+    width: px2rem(80px);
+    height: px2rem(80px);
     text-decoration: none;
     color: #444;
-    font-size: 12px;
+    font-size: px2rem(12px);
   }
   .wedding_nav img{
-    width: 64px;
-    height: 64px;
+    width: px2rem(64px);
+    height: px2rem(64px);
   }
   .header_wedding_a{
+    display: inline-block;
+    float: left;
     color: #000;
-    width: 156px;
-    height: 192px;
+    width: px2rem(150px);
+    height: px2rem(192px);
     text-decoration: none;
-    padding-bottom: 10px;
+    padding-bottom: px2rem(10px);
+    margin-left:px2rem( 5px);
 
   }
   .header_wedding_a img{
-    display: block;
-    width: 148px;
-    height: 148px;
+    display:inline-block;
+    width: px2rem(148px);
+    height: px2rem(148px);
   }
   .header_wedding_a h4{
-    font-size: 14px;
-    height: 18px;
-    line-height: 18px;
+    font-size: px2rem(14px);
+    height: px2rem(18px);
+    line-height: px2rem(18px);
     display: inline-block;
-    width: 148px;
+    width: px2rem(148px);
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
   }
   .wedding_item_mn{
     color: #f83244;
-    margin: 4px 4px;
-    font-size: 16px;
+    margin:px2rem( 4px) px2rem( 4px);
+    font-size: px2rem(14px);
   }
   .wedding_right{
     display: inline-block;
     float: right;
   }
   #wedding_text{
-    width: 148px;
+    width: px2rem(148px);
   }
   #header_wedding_item{
-    margin:0px;
+    width: px2rem(320px);
+    max-height: px2rem(600px);
+    overflow:hidden;
+    margin:px2rem(0px);
     background-color: #fff;
   }
   .wedding_item_num{
@@ -398,90 +464,92 @@ header{
   }
   #wedding_more{
     background-color: #fff;
-    height: 14px;
-    padding: 12px;
+    height: px2rem(14px);
+    padding: px2rem(12px);
     text-align: center;
    
   }
   #wedding_more a{
-    font-size: 13px;
+    font-size: px2rem(13px);
     width: 100%;
-    height: 14px;
-    padding: 12px;
-    line-height: 14px;
+    height: px2rem(14px);
+    padding: px2rem(12px);
+    line-height: px2rem(14px);
     /*display: inline-block;*/
     text-decoration: none;
     color: #e00;
   }
   #beautiful_image{
-    margin-top: 20px;
-    padding-top: 10px;
+    padding-top: px2rem(20px);
     background-color:#fff;
-    height: 270px;
+    float: left;
   }
   #beautiful_image span{
     display: inline-block;
-    font-size: 13px;
+    font-size: px2rem(13px);
     float: left;
   }
   .beautiful_image_title{
     padding-left:1em;
-    height: 17px;
+    height: px2rem(17px);
   }
   .beautiful_image_title a{
     display: inline-block;
-    font-size: 13px;
+    font-size: px2rem(13px);
     color: #ccc;
     float: right;
     
   }
    .beautiful_image_but{
-    width:320px;
-    height: 205px;
+    width:px2rem(320px);
+    height: px2rem(205px);
     background-color: #fff;
     margin:0 auto;
+    float: left;
    }
    .beautiful_image_left{
     float: left;
     display:inline-block;
-    width: 180px;
-    height: 180px;
-    margin:15px;
-    margin-right: 0px;
+    width: px2rem(180px);
+    height:px2rem(180px);
+    margin:px2rem(15px);
+    margin-right:px2rem( 0px);
    }
    .beautiful_image_left img{
-    width: 180px;
-    height: 180px;
+    width: px2rem(180px);
+    height: px2rem(180px);
    }
    .beautiful_image_right{
-     margin:5px;
-    float:right;
+    float:left;
+
     display:inline-block;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 0px;
-    margin-right: 10px;
+    width: px2rem(90px);
+    height: px2rem(90px);
+    margin-bottom:px2rem( 0px);
+    margin-left: px2rem(10px);
+    margin-top: px2rem(10px);
    }
    .beautiful_image_right img{
-    width: 100px;
-    height: 100px;
+
+    width: px2rem(90px);
+    height: px2rem(90px);
    }
    .beautiful_image_right2{
-    margin-right: 10px;
-    margin-left: 0px;
-    margin-top: 0px;
-    float:right;
+    margin-right: px2rem(10px);
+    margin-left: px2rem(10px);
+    margin-top: px2rem(10px);
+    float:left;
     display:inline-block;
-    width: 100px;
-    height: 100px;
+    width: px2rem(90px);
+    height: px2rem(90px);
    }
     .beautiful_image_right2 img{
      
-    width: 100px;
-    height: 100px;
+   width: px2rem(90px);
+    height: px2rem(90px);
    }
    #beautiful_image_btnn{
-    margin-top: 15px;
+    margin-top: px2rem(15px);
     clear: both;
 
 
@@ -489,62 +557,166 @@ header{
    #beautiful_image_btn{
 
 
-    width: 300px;
-    height: 18px;
-    margin-left: 15px;
-    padding-bottom: 10px;
+    width: px2rem(300px);
+    height: px2rem(18px);
+    margin-left: px2rem(15px);
+    padding-bottom: px2rem(10px);
     background-color: #fff;
     position: relative;
+    top: px2rem(10px);  
     z-index: 3;
 
    }
    #beautiful_image_btn a{
     text-decoration: none;
-    font-size: 13px;
+    font-size: px2rem(13px);
     color:#ccc;
     display: inline-block;
     width: auto;
-    height: 20px;
-    padding:0px 2px;
+    height: px2rem(20px);
+    padding:px2rem(0px) px2rem( 2px);
     text-align: center;
-    line-height: 20px;
-    font-size: 13px;
-    border:solid 1px #888;
-    margin-right: 10px;
-    border-radius: 4px;
+    line-height: px2rem(20px);
+    font-size: px2rem(13px);
+    border:solid px2rem( 1px) #888;
+    margin-right: px2rem(10px);
+    border-radius:px2rem( 4px);
     
    }
-   #header_video{
+   .header_video{
+    display: inline-block;
     background-color: #fff;
 
-    width: 320px;
-    height: 172px;
-    margin:20px auto;
+    width: px2rem(142px);
+    height: px2rem(170px);
+    margin:px2rem(20px) auto;
    }
-    #header_video  a,li{
+    .header_video  a,li{
       display: inline-block;
-      width: 142px;
-      height: 108px;
-      margin:10px auto;
+      width: px2rem(142px);
+      height: px2rem(108px);
+      margin:px2rem(10px) auto;
     }
-   #header_video ul{
+   .header_video ul{
     float: left;
    }
-   #header_video img{
-    width: 142px;
-    height: 80px;
+   .header_video img{
+    width: px2rem(142px);
+    height: px2rem(80px);
 
    }
-   #header_video p{
-    width: 142px;
-    height: 40px;
-
+   .header_video p{
+    display: inline-block;
+    width: px2rem(137px);
+    height: px2rem(28px);
+    line-height: px2rem(28px);
+    font-size: px2rem(12px);
+    background-color:#eees;
+    color: #333;
+    padding-left:px2rem( 5px);
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+   
    }
    .header_video1{
+    display: inline-block;
+    width: 50%;
     float: left;
+    padding: 0 px2rem( 5px);
+    margin:px2rem(10px) 0 px2rem(10px) 0;
    }
-   .header_video2{
-    float:right;
+   #header_video_new div{display: inline-block;}
+   #header_baike{
+      width: px2rem(320px);
+      background-color: #fff;
+      color: #333;
+      clear: both;
+      float: left;
+      height: px2rem(500px);
+      background-color: #fff;
+      margin-top: px2rem(20px);
+   }
+  
+  #baike_title{
+    width: 100%;
+    height: px2rem(20px);
+    line-height: px2rem(20px);
+    font-size: px2rem(14px);
+    color: #222;
+    font-weight: 600;
+
+
+  }
+  #baike_title a,span{
+    text-align: center;
+    line-height: px2rem(20px);
+    color: #333;
+    font-size: px2rem(13px);
+    display: inline-block;
+    height: px2rem(21px);
+    background-color: #fff;
+    padding-left: px2rem(10px);
+
+  }
+  #baike_title a{
+    float: right;
+  }
+   #baike_title span{
+    float: left;
+  }
+   .baike_connet{
+    width: px2rem(320px);
+    height: px2rem(88px);
+   }
+   .baike_connet dl{
+    margin:px2rem(10px);
+    
+    clear: both;
+      width:px2rem(300px);
+      height: px2rem(90px);
+   }
+   .baike_connet dt{
+    margin-top: px2rem(10px);
+    display: inline-block;
+      width: 23%;
+      height: px2rem(68px);
+
+   }
+   .baike_connet dd{
+    margin-top: px2rem(10px);
+    margin-left: 5%;
+    display: inline-block;
+      width: 65%;
+      height: px2rem(68px);
+   }
+   .baike_connet dd h3{
+    display: inline-block;
+    width: px2rem(180px);
+    height: px2rem(20px);
+     overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+   
+   }
+   .baike_connet dd p{
+    font-size: px2rem(14px);
+    text-align: left;
+    line-height: px2rem(18px);
+    margin-top:px2rem( 5px);
+    display: inline-block;
+    width: px2rem(180px);
+    height: px2rem(35px);
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
+      
+   }
+   .baike_connet dt img{
+      width: 100%;
+      height: 100%;
    }
 
 
