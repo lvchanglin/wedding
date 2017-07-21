@@ -21,9 +21,12 @@ module.exports = {
 
             //配置服务器支持反向代理功能
         proxy:{
-           '/v4/api/*': {
-                  target: 'http://m.maizuo.com',
-                  host: 'm.maizuo.com',
+         
+           '/spider/*': {
+                  target: 'http://10.2.154.99:3000',
+                  host: '10.2.154.99:3000', 
+
+           
                   changeOrigin:true
               },
 

@@ -26,7 +26,7 @@ li{
 }
 #nav{
 	background:#fff;
-	position:absolute;
+	position:fixed;
 	top:px2rem(90px);
 	width:100%;
 	height:px2rem(80px);
@@ -90,11 +90,22 @@ li{
 		    float:left;
 		}
 		.p2{
+			width:px2rem(300px);
 			font-size: 12px;
 		    line-height:px2rem(28px);
 		    color: #999;
 		    float:right;
+		    margin-right:px2rem(10px);
+		    .real{
+		    	display:inline-block;
+		    	width:40%;
+		    	float:right;
+		    	font-size:12px;
+		    }
 		    .sale{
+		    	display:inline-block;
+		    	width:50%;
+		    	float:left;
 		    	font-size: 14px;
 			    color: #f83244;
 			    margin-right:px2rem(10px);

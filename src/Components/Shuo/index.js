@@ -35,35 +35,35 @@ class Shuo extends Component{
 
 
 				<div className="ruimokuai1">
-					<ul>
-						<li className="ruipindao">精选频道</li>
-						<li className="ruichakan">查看全部</li>
-						<li className="iconfont icon-more"  id="ruiyoujian"></li>
-					</ul>
+					<span>
+						<p className="ruipindao">精选频道</p>
+						<p className="ruichakan">查看全部</p>
+						<p className="iconfont icon-more"  id="ruiyoujian"></p>
+					</span>
 
 					<div className="ruilunbo">
 						<div className="ruidiyige">
 							<img className="ruidiyizhang" src="http://qnm.hunliji.com/FmIKrMXS-mghvDvNUmqUhGLraVTd?imageView2/1/w/172/h/172"/>
-							<ul>
-							<li className="ruiwenzi1">婚纱礼服</li>
-							<li className="ruiwenzi2">今日1360</li>
-							</ul>
+							<span>
+							<p className="ruiwenzi1">婚纱礼服</p>
+							<p className="ruiwenzi2">今日1360</p>
+							</span>
 						</div>
 
 						<div className="ruidiyige">
 							<img className="ruidiyizhang" src="http://qnm.hunliji.com/FvhhF0opvc9TqE-rZH0yF-zG9pAv?imageView2/1/w/172/h/172"/>
-							<ul>
-							<li className="ruiwenzi1">婚庆筹备</li>
-							<li className="ruiwenzi2">今日2619</li>
-							</ul>
+							<span>
+							<p className="ruiwenzi1">婚庆筹备</p>
+							<p className="ruiwenzi2">今日2619</p>
+							</span>
 						</div>
 
 						<div className="ruidiyige">
 							<img className="ruidiyizhang" src="http://qnm.hunliji.com/FqSljGUyRDkoth_8vlbKLQNgeXW4?imageView2/1/w/172/h/172"/>
-							<ul>
-							<li className="ruiwenzi1">淘婚品攻略</li>
-							<li className="ruiwenzi2">今日1529</li>
-							</ul>
+							<span>
+							<p className="ruiwenzi1">淘婚品攻略</p>
+							<p className="ruiwenzi2">今日1529</p>
+							</span>
 						</div>
 
 
@@ -72,11 +72,11 @@ class Shuo extends Component{
 
 
 				<div className="ruimokuai2">
-					<ul>
-						<li className="ruipindao">小编精选</li>
-						<li className="ruichakan">查看全部</li>
-						<li className="iconfont icon-more"  id="ruiyoujian"></li>
-					</ul>
+					<span>
+						<p className="ruipindao">小编精选</p>
+						<p className="ruichakan">查看全部</p>
+						<p className="iconfont icon-more"  id="ruiyoujian"></p>
+					</span>
 
 					<div className="ruilunbo">
 						<div className="ruidierge">
